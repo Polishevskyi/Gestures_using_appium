@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 import java.net.MalformedURLException;
 
-public class LongPress_Android {
+public class AndroidLongPress {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
         UiAutomator2Options options = new UiAutomator2Options()
                 .setDeviceName("emulator-5554")

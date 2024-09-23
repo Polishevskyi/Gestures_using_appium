@@ -14,7 +14,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
-public class scroll_IOS_Sequence {
+public class IOSScroll {
     static AppiumDriver driver;
 
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
@@ -48,7 +48,7 @@ public class scroll_IOS_Sequence {
         if (scrollRatio < 0 || scrollRatio > 1) {
             throw new Error("Scroll distance must be between 0 and 1");
         }
-        Dimension size = scroll_IOS_Sequence.driver.manage().window().getSize();
+        Dimension size = IOSScroll.driver.manage().window().getSize();
         System.out.println(size);
         Point midPoint = new Point((int) (size.width * 0.5), (int) (size.height * 0.5));
         int bottom = midPoint.y + (int) (midPoint.y * scrollRatio);
@@ -88,6 +88,6 @@ public class scroll_IOS_Sequence {
 //        }
         swipe.addAction(input.createPointerMove(duration, PointerInput.Origin.viewport(), end.x, end.y));
         swipe.addAction(input.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-        ((AppiumDriver) scroll_IOS_Sequence.driver).perform(ImmutableList.of(swipe));
+        ((AppiumDriver) IOSScroll.driver).perform(ImmutableList.of(swipe));
     }
 }

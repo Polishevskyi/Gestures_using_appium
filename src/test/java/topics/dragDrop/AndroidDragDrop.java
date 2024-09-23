@@ -2,7 +2,6 @@ package topics.dragDrop;
 
 import base.AppDriver;
 import base.AppFactory;
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -14,9 +13,8 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
-import java.util.Map;
 
-public class Android_dragDrop {
+public class AndroidDragDrop {
 
     @Test
     public static void DD_Test() throws MalformedURLException, InterruptedException {

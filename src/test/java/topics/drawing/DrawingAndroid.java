@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 
 import java.net.MalformedURLException;
 
-public class DrawingAndrtest {
+public class DrawingAndroid {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
         AppiumServer.start();
 
